@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.learning.jlovas.buzzer" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ReactionTimer"
+            android:label="@string/title_activity_reaction_timer" >
+        </activity>
+        <activity
+            android:name=".ReactionInfoPopup"
+            android:label="@string/title_activity_reaction_info_popup"
+            android:theme="@style/AppTheme.clearTheme" >
+        </activity>
+        <activity
+            android:name=".EmailStats"
+            android:label="@string/title_activity_email_stats" >
+        </activity>
+        <activity
+            android:name=".FourPlayers"
+            android:label="@string/title_activity_four_players" >
+        </activity>
+        <activity
+            android:name=".GameshowPlayerSelection"
+            android:label="@string/title_activity_gameshow_player_selection" >
+        </activity>
+        <activity
+            android:name=".Stats"
+            android:label="@string/title_activity_stats" >
+        </activity>
+        <activity
+            android:name=".ThreePlayers"
+            android:label="@string/title_activity_three_players" >
+        </activity>
+        <activity
+            android:name=".TwoPlayers"
+            android:label="@string/title_activity_two_players" >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" >
+        </activity>
+        <activity
+            android:name=".GameshowWinner"
+            android:label="@string/title_activity_gameshow_winner" >
+        </activity>
+    </application>
+
+</manifest>
