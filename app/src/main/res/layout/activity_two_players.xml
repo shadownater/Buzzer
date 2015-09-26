@@ -9,18 +9,20 @@
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Player1"
+        android:layout_height="240dp"
+        android:text="Player One"
         android:id="@+id/player1Button"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:onClick="buttonPress" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Player 2"
+        android:layout_height="240dp"
+        android:text="Player Two"
         android:id="@+id/player2Button"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="buttonPress" />
 
 </RelativeLayout>

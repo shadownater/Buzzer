@@ -4,6 +4,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class TwoPlayers extends ActionBarActivity {
 
@@ -12,6 +14,36 @@ public class TwoPlayers extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_two_players);
     }
+
+    public void buttonPress(View view){
+        //switchcase method for finding button by ID credit goes here
+
+        switch(view.getId()) {
+            case R.id.player1Button:
+            //display text that player2 touched button first
+                //credit goes here for toast tutorial
+
+                Toast.makeText(getApplicationContext(), "Player One touched first!", Toast.LENGTH_SHORT).show();
+
+                //something here for the increase of points to player 1 in 2pl mode
+
+                finish();
+                break;
+            case R.id.player2Button:
+                //display text that player2 touched button first
+
+                Toast.makeText(getApplicationContext(), "Player Two touched first!", Toast.LENGTH_SHORT).show();
+                finish();
+                break;
+
+
+        }
+
+
+    }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -31,6 +63,7 @@ public class TwoPlayers extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
 
         return super.onOptionsItemSelected(item);
     }
