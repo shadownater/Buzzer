@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 public class TwoPlayers extends ActionBarActivity {
 
+    //My class objects
+    BuzzerStats buzzerstats = new BuzzerStats();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,16 +26,18 @@ public class TwoPlayers extends ActionBarActivity {
             //display text that player2 touched button first
                 //credit goes here for toast tutorial
 
-                Toast.makeText(getApplicationContext(), "Player One touched first!", Toast.LENGTH_SHORT).show();
+                //increase the points of the player
+                buzzerstats.increaseTwoPlayer1p();
 
-                //something here for the increase of points to player 1 in 2pl mode
-
+                Toast.makeText(getApplicationContext(), "Player One has " + buzzerstats.getTwoPlayer1p() + " points!", Toast.LENGTH_SHORT).show();
                 finish();
                 break;
             case R.id.player2Button:
                 //display text that player2 touched button first
 
-                Toast.makeText(getApplicationContext(), "Player Two touched first!", Toast.LENGTH_SHORT).show();
+                buzzerstats.increaseTwoPlayer2p();
+
+                Toast.makeText(getApplicationContext(), "Player Two has " + buzzerstats.getTwoPlayer2p() + " points!", Toast.LENGTH_SHORT).show();
                 finish();
                 break;
 

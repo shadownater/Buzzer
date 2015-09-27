@@ -27,7 +27,7 @@ public class ReactionInfoPopup extends ActionBarActivity {
 
         getWindow().setLayout((int)(0.7*width), (int)(0.6*height));
     }
-
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -49,4 +49,5 @@ public class ReactionInfoPopup extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    */
 }
