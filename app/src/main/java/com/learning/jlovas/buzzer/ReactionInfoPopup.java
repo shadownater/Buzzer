@@ -1,10 +1,12 @@
 package com.learning.jlovas.buzzer;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class ReactionInfoPopup extends ActionBarActivity {
 
@@ -18,15 +20,23 @@ public class ReactionInfoPopup extends ActionBarActivity {
 
         //credit for this setup of pop up goes to:
         //
-        DisplayMetrics dm = new DisplayMetrics();
+       /* DisplayMetrics dm = new DisplayMetrics();
         //get size of screen
         getWindowManager().getDefaultDisplay().getMetrics(dm);
 
         int width = dm.widthPixels;
         int height = dm.heightPixels;
 
-        getWindow().setLayout((int)(0.7*width), (int)(0.6*height));
+        getWindow().setLayout((int)(0.6*width), (int)(0.6*height));
+    */
     }
+
+    public void continueButton(View view){
+        Intent intent = new Intent(this, ReactionTimer.class);
+        startActivity(intent);
+
+    }
+
     /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

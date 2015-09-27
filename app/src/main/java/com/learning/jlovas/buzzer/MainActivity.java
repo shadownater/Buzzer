@@ -44,7 +44,7 @@ public class MainActivity extends ActionBarActivity {
     }
     //stuff your stuff into here!
     public void reactionTimerButton(View view){
-        Intent intent = new Intent(MainActivity.this, ReactionTimer.class);
+        Intent intent = new Intent(MainActivity.this, ReactionInfoPopup.class);
         startActivity(intent);
     }
 

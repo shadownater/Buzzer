@@ -1,5 +1,6 @@
 package com.learning.jlovas.buzzer;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,6 +31,10 @@ public class TwoPlayers extends ActionBarActivity {
                 buzzerstats.increaseTwoPlayer1p();
 
                 Toast.makeText(getApplicationContext(), "Player One has " + buzzerstats.getTwoPlayer1p() + " points!", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent();
+                intent.putExtra("playerOneStatsP2", buzzerstats);
+
                 finish();
                 break;
             case R.id.player2Button:

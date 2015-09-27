@@ -11,25 +11,35 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to the Reaction Timer"
+        android:text="Welcome to the\nReaction Timer"
         android:id="@+id/welcome"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_above="@+id/instructions"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Tap quickly when the something something happens."
+        android:text="Tap quickly when the\nbackground changes."
         android:id="@+id/instructions"
-        android:layout_below="@+id/welcome"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/popupButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:text="Continue"
+        android:textSize="20sp"
+        android:id="@+id/popupButton"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false"
-        android:gravity="center_horizontal" />
+        android:layout_marginBottom="166dp"
+        android:background="#68c8ff"
+        android:onClick="continueButton"/>
 
 </RelativeLayout>

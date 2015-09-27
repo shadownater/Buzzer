@@ -6,13 +6,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class Stats extends ActionBarActivity {
+
+    //grabbing the information back here
+    Intent intent =getIntent();
+    BuzzerStats buzzerstats = (BuzzerStats)intent.getParcelableExtra("playerOneStatsP2");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
+
+        //Toast.makeText(getApplicationContext(), "TEST! P1: " + buzzerstats.getTwoPlayer1p() + " points!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
